@@ -1068,12 +1068,12 @@
 
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X 56                 //X = RcosA   --    A = 30    --    R = 65
-  #define ABL_PROBE_PT_1_Y 32                 //Y = RsinA
-  #define ABL_PROBE_PT_2_X -56                //                  A = 150   --    R = 65
-  #define ABL_PROBE_PT_2_Y 32                 //
-  #define ABL_PROBE_PT_3_X 0                  //                  A = 270   --    R = 65
-  #define ABL_PROBE_PT_3_Y -65                //
+  #define ABL_PROBE_PT_1_X  56
+  #define ABL_PROBE_PT_1_Y  32
+  #define ABL_PROBE_PT_2_X -26
+  #define ABL_PROBE_PT_2_Y  15
+  #define ABL_PROBE_PT_3_X   0
+  #define ABL_PROBE_PT_3_Y -64
 
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
