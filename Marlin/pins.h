@@ -36,10 +36,17 @@
 #define __PINS_H__
 
 //
+//ostrichbean's boards
+//
+
+#if MB(OSTRICHBEAN_TRIGORILLA)
+  #include "pins_OSTRICHBEAN_TRIGORILLA.h"
+
+//
 // RAMPS 1.3 / 1.4 - ATmega1280, ATmega2560
 //
 
-#if MB(RAMPS_OLD)
+#elif MB(RAMPS_OLD)
   #include "pins_RAMPS_OLD.h"
 #elif MB(RAMPS_13_EFB)
   #define IS_RAMPS_EFB
