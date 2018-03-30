@@ -33,3 +33,4 @@ Before filing an issue be sure to test the 1.1 and/or 2.0 "bugfix" branches to s
 * Include a ZIP file containing your `Configuration.h` and `Configuration_adv.h` files.
 * Provide pictures or links to videos that clearly demonstrate the issue.
 * Read the "Contributing" page (under "Helpful resources") for additional guidelines.
+
