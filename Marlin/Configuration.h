@@ -1016,8 +1016,8 @@
  *   leveling in steps so you can manually adjust the Z height at each grid-point.
  *   With an LCD controller the process is guided step-by-step.
  */
-//#define AUTO_BED_LEVELING_3POINT
-#define AUTO_BED_LEVELING_LINEAR
+#define AUTO_BED_LEVELING_3POINT
+//#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_BILINEAR
 //#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
@@ -1094,17 +1094,6 @@
 
   #endif
 
-#elif ENABLED(AUTO_BED_LEVELING_3POINT)
-
-  // 3 arbitrary points to probe.
-  // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X  56
-  #define ABL_PROBE_PT_1_Y  32
-  #define ABL_PROBE_PT_2_X -26
-  #define ABL_PROBE_PT_2_Y  15
-  #define ABL_PROBE_PT_3_X   0
-  #define ABL_PROBE_PT_3_Y -64
-
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
   //===========================================================================
@@ -1142,12 +1131,12 @@
  * Override if the automatically selected points are inadequate.
  */
 #if ENABLED(AUTO_BED_LEVELING_3POINT) || ENABLED(AUTO_BED_LEVELING_UBL)
-  //#define PROBE_PT_1_X 15
-  //#define PROBE_PT_1_Y 180
-  //#define PROBE_PT_2_X 15
-  //#define PROBE_PT_2_Y 20
-  //#define PROBE_PT_3_X 170
-  //#define PROBE_PT_3_Y 20
+  #define PROBE_PT_1_X 56
+  #define PROBE_PT_1_Y 32
+  #define PROBE_PT_2_X -26
+  #define PROBE_PT_2_Y 15
+  #define PROBE_PT_3_X 0
+  #define PROBE_PT_3_Y -64
 #endif
 
 /**
