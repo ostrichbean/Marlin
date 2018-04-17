@@ -1352,10 +1352,15 @@
   //#define SPEED_POWER_MIN     5000
   //#define SPEED_POWER_MAX    30000    // SuperPID router controller 0 - 30,000 RPM
 
-  #define SPEED_POWER_SLOPE      0.3922
+  //#define SPEED_POWER_SLOPE      0.3922
+  //#define SPEED_POWER_INTERCEPT  0
+  //#define SPEED_POWER_MIN       10
+  //#define SPEED_POWER_MAX      100      // 0-100%
+
+  #define SPEED_POWER_SLOPE      1
   #define SPEED_POWER_INTERCEPT  0
-  #define SPEED_POWER_MIN       10
-  #define SPEED_POWER_MAX      100      // 0-100%
+  #define SPEED_POWER_MIN        0
+  #define SPEED_POWER_MAX        255 
 #endif
 
 /**
