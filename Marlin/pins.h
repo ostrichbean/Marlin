@@ -53,6 +53,8 @@
 
 #if MB(OSTRICHBEAN_TRIGORILLA)
   #include "pins_OSTRICHBEAN_TRIGORILLA.h"
+#elif MB(OSTRICHBEAN_RAMOS)
+  #include "pins_OSTRICHBEAN_RAMOS.h"
 
 //
 // RAMPS 1.3 / 1.4 - ATmega1280, ATmega2560
